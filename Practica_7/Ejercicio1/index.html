@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="filas-content"></tbody>
+    </table>
+
+    <template id="filas-template">
+        <tr>
+            <td class="id"></td>
+            <td class="name"></td>
+            <td class="price"></td>
+            <td class="quantity"></td>
+            <td><button class="delete-button">Delete</button></td>
+        </tr>
+    </template>
+
+    <form id="agregar-producto-form">
+        <input type="text" id="nombre-producto" placeholder="Nombre del producto" required>
+        <input type="number" id="precio-producto" placeholder="Precio" step="0.01" required>
+        <input type="number" id="cantidad-producto" placeholder="Cantidad" required>
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <div id="total">Total: $0.00</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

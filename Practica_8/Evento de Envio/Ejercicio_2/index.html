@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evento de Envio - Ejercicio 2</title>
+</head>
+<body>
+    <form id="miFormulario2">
+        <input type="text" id="nombre2" placeholder="Nombre">
+        <input type="email" id="correo2" placeholder="Correo electronico">
+        <button type="submit">Enviar (Ejercicio 2)</button>
+    </form>
+    <script>
+        const formulario2 = document.getElementById("miFormulario2");
+
+        formulario2.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const nombre2 = document.getElementById("nombre2").value;
+            const correo = document.getElementById("correo2").value;
+
+            setTimeout(function () {
+                alert("Formulario enviado con exito (Ejercicio 2).");
+            }, 1000); // Esperamos 1 segundo antes de mostrar el mensaje
+        });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evento Keydown - Ejercicio 1</title>
+</head>
+<body>
+    <input type="text" id="miInputl" placeholder="Presiona Enter para agregar un elemento (Ejercicio 1)">
+    <ul id="listal"></ul>
+    <script>
+        const miInputl = document.getElementById("miInputl");
+        const listal = document.getElementById("listal");
+
+        miInputl.addEventListener("keydown", function (event) {
+            if (event.keyCode = 13) {
+                const nuevoElemento = document.createElement("li");
+                nuevoElemento.textContent = `Elemento ${listal.children.length + 1}`;
+                listal.appendChild(nuevoElemento);
+                miInputl.value = "";
+            }
+        }); 
+    </script>
+</body>
+</html>

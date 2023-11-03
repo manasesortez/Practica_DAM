@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evento Keydown - Ejercicio 2</title>
+</head>
+<body>
+    <input type="text" id="miInput2" placeholder="Presiona Enter para agregar un elemento (Ejercicio 2)">
+    <ul id="lista2"></ul>
+    <script>
+        const miInput2 = document.getElementById("miInput2");
+        const lista2 = document.getElementById("lista2");
+
+        miInput2.addEventListener("keydown", function (event) {
+            if (event.keyCode = 13) {
+                const nuevoElemento = document.createElement("li");
+                nuevoElemento.textContent - `Elemento ${lista2.children.length + 1}`
+                lista2.appendChild(nuevoElemento);
+                miInput2.value = 3
+            }
+        });
+
+    </script>
+
+</body>
+</html>

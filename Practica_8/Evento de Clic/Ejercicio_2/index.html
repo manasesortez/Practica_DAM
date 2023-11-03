@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Evento de Clic - Ejercicio 2</title>
+</head>
+<body>
+<button id="miBoton2">Haz clic para contar (Ejercicio 2)</button>
+<p id="contadorClics">Clics: 0</p>
+<script>
+    const miBoton2 = document.getElementById("miBoton2");
+    const contadorClics = document.getElementById("contadorClics");
+
+    let clics = 0;
+    miBoton2.addEventListener("click", function() {
+        clics++;
+        contadorClics.textContent = `Clics: ${clics}`;
+    })
+</script>
+</body>
+</html>
+

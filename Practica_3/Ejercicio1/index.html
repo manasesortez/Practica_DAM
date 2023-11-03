@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>CRUD de Personas</title>
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD de Personas</h1>
+    <form id="personForm">
+      <input type="text" id="firstName" placeholder="Nombre" required>
+      <input type="text" id="lastName" placeholder="Apellidos" required>
+      <select id="gender" required>
+        <option value="male">Masculino</option>
+        <option value="female">Femenino</option>
+      </select>
+      <input type="date" id="birthDate" required>
+      <button type="submit">Registrar</button>
+    </form>
+    <div id="personTable"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

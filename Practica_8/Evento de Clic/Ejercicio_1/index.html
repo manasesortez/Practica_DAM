@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Evento de Clic -Ejercicio 1</title>
+</head>
+<body>
+<button id="miBoton1">Haz clic para cambiar el texto (Ejercicio 1)</button>
+<p id="textol">Texto original</p>
+<script>
+
+const miBoton1 = document.getElementById("miBoton1");
+const textol = document.getElementById("textol");
+
+miBoton1.addEventListener("click", function() {
+    textol.textContent = "Texto cambiado por clic (Ejercicio 1)";
+})
+
+</script>
+</body>
+</html>
+
