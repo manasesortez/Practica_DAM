@@ -1,0 +1,19 @@
+{
+  "name": "ejercicio1",
+  "version": "1.0.0",
+  "description": "amto_dev",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "javascript"
+  ],
+  "author": "Alberto Turcios",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.1.2"
+  }
+}
